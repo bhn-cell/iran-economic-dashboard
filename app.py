@@ -104,7 +104,7 @@ if chart_type == "نقشه استانی":
     map_df["lon"] = map_df["province"].map(lambda x: coords[x][0])
     map_df["lat"] = map_df["province"].map(lambda x: coords[x][1])
 
-    fig = px.scatter_mapbox(
+    fig = px.scatter_map(
         map_df,
         lat="lat",
         lon="lon",
